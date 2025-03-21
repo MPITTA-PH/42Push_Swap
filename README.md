@@ -4,39 +4,99 @@
 
 https://github.com/user-attachments/assets/c3bef038-3bd5-4375-9b29-d043f8659a74
 
-
 ## Description 🇬🇧
-
-This project consists of a communication program between a client and a server using UNIX signals. The server is started first and displays its PID. When the client is executed, it receives the server's PID and a string as parameters, sending this string through the SIGUSR1 and SIGUSR2 signals. When the server receives the message, it immediately prints the received content. In addition, it can receive strings from several clients consecutively without having to be restarted.
+This project consists of creating a program that sorts a stack of integers. The surprising factor of this project is the limited number of operations available to do so (listed below). We must also manage the memory used to perform the operations well, avoiding leaks and conflicts in decision making.
 
 ## Technologies Used
-
 - Programming in C
-- Data Structures - using stack to order the integers
-- Sorting Algorithms - I used the turkish algorithm
-- Memory Management
-- Optimization and Efficiency
-- Testing and Debugging - I tested with the 42Checker, Valgrind and PushSwap Visualizer
-  
+- Data structures - using stacks to sort data
+- Sorting algorithms - I used the Turkish algorithm
+- Memory management
+- Optimization and efficiency
+- Testing and debugging - I tested with 42Checker, Valgrind and PushSwap Visualizer
+
+### Initial Structure
+- The project works with two stacks, called A and B.
+- At the beginning:
+- Stack a contains a random amount of unique integers (positive and/or negative).
+- Stack b is empty.
+### Objective
+- Sort the numbers in stack A in ascending order using a limited set of operations.
+### Available Operations
+
+    sa
+    sb
+    ss
+
+- sa (swap a)
+- Swaps the first two elements from the top of stack a.
+- If there are less than two elements, do nothing.
+
+- sb (swap b)
+- Swap the first two elements on top of stack b.
+- If there are less than two elements, do nothing.
+
+- ss (swap both)
+- Execute sa and sb simultaneously.
+---
+    pa
+    pb
+
+- pa (push a)
+- Move the first element on top of stack b to the top of stack a.
+- If b is empty, do nothing.
+
+- pb (push b)
+- Move the first element on top of stack a to the top of stack b.
+- If a is empty, do nothing.
+---
+    ra
+    rb
+    rr
+
+- ra (rotate a)
+- Move all elements on the stack up one position.
+- The first element becomes the last element.
+
+- rb (rotate b)
+- Move all elements on the stack b up one position.
+- The first element becomes the last element.
+
+- rr (rotate both)
+- Runs ra and rb at the same time.
+---
+    rra
+    rrb
+    rrr
+
+- rra (reverse rotate a)
+- Moves all elements in the stack down one position.
+- The last element becomes the first.
+
+- rrb (reverse rotate b)
+- Moves all elements in the stack b down one position.
+- The last element becomes the first.
+
+- rrr (reverse rotate both)
+- Runs rra and rrb at the same time.
 
 ## How to Run
-
-- Clone the repository;
-
-- Access the project folder;
-
+- Clone the repository; - Access the project folder;
 - Compile the files;
+- Use the executable followed by the arguments you want to sort (integers, >/< 0);
 
-- Start the server:
+      ./push_swap 7 46 2 -1 9 11 84 1787 17
+---
+## Using the PushSwap Visualizer
+This is all a bit abstract, it becomes easier to understand what is happening if we see in practice what the program does in real time.
 
-- The server will print its PID;
+For this, I highly recommend Emmanuel Ruaud's o-reo repository.
+In his repository, o-reo explains in detail how to run the PushSwap Visualizer.
+The video at the beginning of this README is of the execution of this Visualizer.
 
-- In another terminal window, run the client, passing the server's PID and the desired message;
+You can find the repository at https://github.com/o-reo/push_swap_visualizer
 
-- The server will print the received message immediately;
-
-
-## Contributing
+## Contribution
 - Feel free to contribute! Follow these steps:
 - Fork the project;
 - Create a branch for your feature: git checkout -b my-new-feature;
@@ -44,8 +104,7 @@ This project consists of a communication program between a client and a server u
 - Push to the branch: git push origin my-new-feature;
 - Open a Pull Request;
 
-  
-
+---
 
 ## Descrição 🇵🇹
 Este projeto consiste na criação de um programa que ordene uma stack de inteiros, o fator surpresa deste projteto é o número limitado de operações disponiveis para o fazer (listadas abaixo). Devemos também fazer uma boa gestão da memória utilizada para realizar as operações, evitando leaks e conflitos na tomada de decisões.
@@ -53,8 +112,8 @@ Este projeto consiste na criação de um programa que ordene uma stack de inteir
 ### Estrutura Inicial
   - O projeto trabalha com duas pilhas, chamadas A e B.
   - No início:
-  -- A pilha a contém uma quantidade aleatória de números inteiros únicos (positivos e/ou negativos).
-  -- A pilha b está vazia.
+    - A pilha a contém uma quantidade aleatória de números inteiros únicos (positivos e/ou negativos).
+    - A pilha b está vazia.
 ### Objetivo
   - Ordenar os números da pilha A em ordem crescente usando um conjunto limitado de operações.
 ### Operações Disponíveis
@@ -131,7 +190,15 @@ Este projeto consiste na criação de um programa que ordene uma stack de inteir
   - Use o executavel seguido dos argumentos que pretende ordenar(nºs inteiros, >/< 0);
     
         ./push_swap 7 46 2 -1 9 11 84 1787 17
+---
+## Utilizar o PushSwap Visualizer
+  Tudo isto fica um pouco abstracto, torna-se mais fácil de compreender o que está a acontecer se virmos na prática o que o programa faz em tempo real.
 
+  Para tal recomendo vivamente o repositório do o-reo do Emmanuel Ruaud.
+  No seu repositório o o-reo explica de forma detalhada como executar o PushSwap Visualizer.
+  O vídeo no início deste README é da exucução desse Visualizer.
+
+  Podem encontrar o repositório em https://github.com/o-reo/push_swap_visualizer
 
 ## Contribuição
   - Sinta-se à vontade para contribuir! Siga estes passos:
