@@ -59,51 +59,51 @@ This project consists of a communication program between a client and a server u
 
   ### Trocas de elementos (swap)
   
-  sa (swap a)
+  - sa (swap a)
     Troca os dois primeiros elementos do topo da pilha a.
     Se houver menos de dois elementos, não faz nada.
     
-  sb (swap b)
+  - sb (swap b)
     Troca os dois primeiros elementos do topo da pilha b.
     Se houver menos de dois elementos, não faz nada.
       
-  ss (swap ambas)
+  - ss (swap ambas)
     Executa sa e sb simultaneamente.
 
   ### Movimentação de elementos entre as pilhas (push)
 
-  pa (push a)
+  - pa (push a)
     Move o primeiro elemento do topo da pilha b para o topo da pilha a.
     Se b estiver vazia, não faz nada.
   
-  pb (push b)
+  - pb (push b)
     Move o primeiro elemento do topo da pilha a para o topo da pilha b.
     Se a estiver vazia, não faz nada.
 
   ### Rotações de pilha (rotate)
 
-  ra (rotate a)
+  - ra (rotate a)
     Move todos os elementos da pilha a uma posição para cima.
     O primeiro elemento torna-se o último.
 
-  rb (rotate b)
+  - rb (rotate b)
     Move todos os elementos da pilha b uma posição para cima.
     O primeiro elemento torna-se o último.
       
-  rr (rotate ambas)
+  - rr (rotate ambas)
     Executa ra e rb ao mesmo tempo.
 
   ### Rotações de pilha (rotate)
 
-  rra (reverse rotate a)
+  - rra (reverse rotate a)
     Move todos os elementos da pilha a uma posição para baixo.
     O último elemento torna-se o primeiro.
 
-  rrb (reverse rotate b)
+  - rrb (reverse rotate b)
     Move todos os elementos da pilha b uma posição para baixo.
     O último elemento torna-se o primeiro.
 
-  rrr (reverse rotate ambas)
+  - rrr (reverse rotate ambas)
     Executa rra e rrb ao mesmo tempo.
 
 ## Tecnologias Utilizadas
