@@ -57,9 +57,9 @@ This project consists of a communication program between a client and a server u
   - Ordenar os números da pilha A em ordem crescente usando um conjunto limitado de operações.
 ### 3. Operações Disponíveis
 
-  #### - sa (swap a)
-      Troca os dois primeiros elementos do topo da pilha a.
-      Se houver menos de dois elementos, não faz nada.
+    #### - sa (swap a)
+  Troca os dois primeiros elementos do topo da pilha a.
+  Se houver menos de dois elementos, não faz nada.
     
   ##### - sb (swap b)
       Troca os dois primeiros elementos do topo da pilha b.
