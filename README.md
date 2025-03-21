@@ -29,56 +29,56 @@ This project consists of creating a program that sorts a stack of integers. The 
     ss
 
 - sa (swap a)
-- Swaps the first two elements from the top of stack a.
-- If there are less than two elements, do nothing.
+    - Swaps the first two elements from the top of stack a.
+    - If there are less than two elements, do nothing.
 
 - sb (swap b)
-- Swap the first two elements on top of stack b.
-- If there are less than two elements, do nothing.
+    - Swap the first two elements on top of stack b.
+    - If there are less than two elements, do nothing.
 
 - ss (swap both)
-- Execute sa and sb simultaneously.
+    - Execute sa and sb simultaneously.
 ---
     pa
     pb
 
 - pa (push a)
-- Move the first element on top of stack b to the top of stack a.
-- If b is empty, do nothing.
+    - Move the first element on top of stack b to the top of stack a.
+    - If b is empty, do nothing.
 
 - pb (push b)
-- Move the first element on top of stack a to the top of stack b.
-- If a is empty, do nothing.
+    - Move the first element on top of stack a to the top of stack b.
+    - If a is empty, do nothing.
 ---
     ra
     rb
     rr
 
 - ra (rotate a)
-- Move all elements on the stack up one position.
-- The first element becomes the last element.
+    - Move all elements on the stack up one position.
+    - The first element becomes the last element.
 
 - rb (rotate b)
-- Move all elements on the stack b up one position.
-- The first element becomes the last element.
+    - Move all elements on the stack b up one position.
+    - The first element becomes the last element.
 
 - rr (rotate both)
-- Runs ra and rb at the same time.
+    - Runs ra and rb at the same time.
 ---
     rra
     rrb
     rrr
 
 - rra (reverse rotate a)
-- Moves all elements in the stack down one position.
-- The last element becomes the first.
+    - Moves all elements in the stack down one position.
+    - The last element becomes the first.
 
 - rrb (reverse rotate b)
-- Moves all elements in the stack b down one position.
-- The last element becomes the first.
+    - Moves all elements in the stack b down one position.
+    - The last element becomes the first.
 
 - rrr (reverse rotate both)
-- Runs rra and rrb at the same time.
+    - Runs rra and rrb at the same time.
 
 ## How to Run
 - Clone the repository; - Access the project folder;
