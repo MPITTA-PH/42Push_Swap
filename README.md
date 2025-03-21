@@ -67,6 +67,10 @@ This project consists of a communication program between a client and a server u
       
   - ss (swap ambas)
       Executa sa e sb simultaneamente.
+
+        sa
+        sb
+        ss
 ---
   - pa (push a)
       Move o primeiro elemento do topo da pilha b para o topo da pilha a.
