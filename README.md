@@ -57,54 +57,46 @@ This project consists of a communication program between a client and a server u
   - Ordenar os números da pilha A em ordem crescente usando um conjunto limitado de operações.
 ### 3. Operações Disponíveis
 
-  ### Trocas de elementos (swap)
-  
   - sa (swap a)
-    Troca os dois primeiros elementos do topo da pilha a.
-    Se houver menos de dois elementos, não faz nada.
+      Troca os dois primeiros elementos do topo da pilha a.
+      Se houver menos de dois elementos, não faz nada.
     
   - sb (swap b)
-    Troca os dois primeiros elementos do topo da pilha b.
-    Se houver menos de dois elementos, não faz nada.
+      Troca os dois primeiros elementos do topo da pilha b.
+      Se houver menos de dois elementos, não faz nada.
       
   - ss (swap ambas)
-    Executa sa e sb simultaneamente.
-
-  ### Movimentação de elementos entre as pilhas (push)
-
+      Executa sa e sb simultaneamente.
+---
   - pa (push a)
-    Move o primeiro elemento do topo da pilha b para o topo da pilha a.
-    Se b estiver vazia, não faz nada.
+      Move o primeiro elemento do topo da pilha b para o topo da pilha a.
+      Se b estiver vazia, não faz nada.
   
   - pb (push b)
-    Move o primeiro elemento do topo da pilha a para o topo da pilha b.
-    Se a estiver vazia, não faz nada.
-
-  ### Rotações de pilha (rotate)
-
+      Move o primeiro elemento do topo da pilha a para o topo da pilha b.
+      Se a estiver vazia, não faz nada.
+---
   - ra (rotate a)
-    Move todos os elementos da pilha a uma posição para cima.
-    O primeiro elemento torna-se o último.
+      Move todos os elementos da pilha a uma posição para cima.
+      O primeiro elemento torna-se o último.
 
   - rb (rotate b)
-    Move todos os elementos da pilha b uma posição para cima.
-    O primeiro elemento torna-se o último.
+      Move todos os elementos da pilha b uma posição para cima.
+      O primeiro elemento torna-se o último.
       
   - rr (rotate ambas)
-    Executa ra e rb ao mesmo tempo.
-
-  ### Rotações de pilha (rotate)
-
+      Executa ra e rb ao mesmo tempo.
+---
   - rra (reverse rotate a)
-    Move todos os elementos da pilha a uma posição para baixo.
-    O último elemento torna-se o primeiro.
+      Move todos os elementos da pilha a uma posição para baixo.
+      O último elemento torna-se o primeiro.
 
   - rrb (reverse rotate b)
-    Move todos os elementos da pilha b uma posição para baixo.
-    O último elemento torna-se o primeiro.
+      Move todos os elementos da pilha b uma posição para baixo.
+      O último elemento torna-se o primeiro.
 
   - rrr (reverse rotate ambas)
-    Executa rra e rrb ao mesmo tempo.
+      Executa rra e rrb ao mesmo tempo.
 
 ## Tecnologias Utilizadas
 
