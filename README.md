@@ -48,12 +48,13 @@ This project consists of a communication program between a client and a server u
 
 
 ## Descrição 🇵🇹
+Este projeto consiste na criação de um programa que ordene uma stack de inteiros, o fator surpresa deste projteto é o número limitado de operações disponiveis para o fazer (listadas abaixo). Devemos também fazer uma boa gestão da memória utilizada para realizar as operações, evitando leaks e conflitos na tomada de decisões.
 
 ### Estrutura Inicial
-  - O projeto trabalha com duas pilhas, chamadas a e b.
+  - O projeto trabalha com duas pilhas, chamadas A e B.
   - No início:
-  - A pilha a contém uma quantidade aleatória de números inteiros únicos (positivos e/ou negativos).
-  - A pilha b está vazia.
+  -- A pilha a contém uma quantidade aleatória de números inteiros únicos (positivos e/ou negativos).
+  -- A pilha b está vazia.
 ### Objetivo
   - Ordenar os números da pilha A em ordem crescente usando um conjunto limitado de operações.
 ### Operações Disponíveis
@@ -115,9 +116,21 @@ This project consists of a communication program between a client and a server u
        - Executa rra e rrb ao mesmo tempo.
 
 ## Tecnologias Utilizadas
+- Programação em C
+- Estruturas de dados - usando stacks(pilhas) para ordenar os dados
+- Algoritmos de ordenação - utilizei o algoritmo turco
+- Gestão de memória
+- Otimização e eficácia
+- Teste e debugging - testei com o 42Checker, Valgrind e PushSwap Visualizer
 
 
 ## Como Executar
+  - Clone o repositório;
+  - Acesse a pasta do projeto;
+  - Compile os ficheiros;
+  - Use o executavel seguido dos argumentos que pretende ordenar(nºs inteiros, >/< 0);
+    
+        ./push_swap 7 46 2 -1 9 11 84 1787 17
 
 
 ## Contribuição
