@@ -12,8 +12,11 @@ This project consists of a communication program between a client and a server u
 ## Technologies Used
 
 - Programming in C
-- UNIX signals (SIGUSR1, SIGUSR2)
-- Interprocess communication (PID)
+- Data Structures - using stack to order the integers
+- Sorting Algorithms - I used the turkish algorithm
+- Memory Management
+- Optimization and Efficiency
+- Testing and Debugging - I tested with the 42Checker, Valgrind and PushSwap Visualizer
   
 
 ## How to Run
