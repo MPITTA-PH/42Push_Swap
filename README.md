@@ -49,16 +49,14 @@ This project consists of a communication program between a client and a server u
 
 ## Descrição 🇵🇹
 
-## Regras do projeto
-
 ### Estrutura Inicial
   - O projeto trabalha com duas pilhas, chamadas a e b.
   - No início:
   - A pilha a contém uma quantidade aleatória de números inteiros únicos (positivos e/ou negativos).
   - A pilha b está vazia.
-### 2. Objetivo
+### Objetivo
   - Ordenar os números da pilha A em ordem crescente usando um conjunto limitado de operações.
-### 3. Operações Disponíveis
+### Operações Disponíveis
 
         sa
         sb
